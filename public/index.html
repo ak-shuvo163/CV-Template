@@ -1,19 +1,167 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Professional CV Template</title>
-  <link rel="stylesheet" href="./css/output.css" />
-</head>
-<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-all duration-300">
-  <div class="max-w-3xl mx-auto p-4">
-    <button onclick="document.documentElement.classList.toggle('dark')" class="mb-4 px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded">
-      Toggle Dark Mode
-    </button>
-    <h1 class="text-4xl font-bold mb-2">John Doe</h1>
-    <p class="text-lg text-gray-600 dark:text-gray-400">Frontend Developer | HTML, CSS, JS, React</p>
-    <!-- Add your sections here (Skills, Experience, Education, etc.) -->
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional CV of AK Shuvo - Web Designer" />
+    <title>AK Shuvo - CV</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans leading-relaxed">
+
+      <!-- Navbar -->
+      <nav
+      class="w-full px-4 py-3 flex justify-between items-center shadow-md bg-white/80 dark:bg-gray-700/80 backdrop:blur transition duration-300 fixed top-0 left-0 z-50">
+      <div class="flex items-center gap-2">
+          <img src="/src/assets/images/profile-imge.jpg" alt="Logo" class="w-10 h-10 rounded-full border-2 border-pink-500">
+          <span class="font-bold text-xl tracking-tight">CodeCrafter</span>
+      </div>
+      <ul class="hidden md:flex gap-8 font-semibold">
+          <li><a href="index.html" class="nav-link hover:text-pink-500 transition">Home</a></li>
+          <li><a href="about.html" class="nav-link hover:text-pink-500 transition">About</a></li>
+          <li><a href="#services" class="nav-link hover:text-pink-500 transition">Services</a></li>
+          <li><a href="projects.html" class="nav-link hover:text-pink-500 transition">Projects</a></li>
+          <li><a href="contact.html" class="nav-link hover:text-pink-500 transition">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+          <button id="theme-toggle" class="text-2xl focus:outline-none" aria-label="Toggle dark mode">
+              <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="md:hidden text-2xl" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+  </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+          class="fixed top-0 right-[-100%] w-64 h-full bg-white dark:bg-gray-900 shadow-lg flex flex-col items-start gap-6 px-6 py-10 text-lg transition-all duration-300 ease-in-out z-50">
+          <button id="close-menu" class="absolute top-4 right-4 text-2xl">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          <a href="#home" class="block hover:text-pink-500 transition">Home</a>
+          <a href="about.html" class="block hover:text-pink-500 transition">About</a>
+          <a href="#services" class="block hover:text-pink-500 transition">Services</a>
+          <a href="projects.html" class="block hover:text-pink-500 transition">Projects</a>
+          <a href="contact.html" class="block hover:text-pink-500 transition">Contact</a>
+      </div>
+  <!-- =============== HEADER =============== -->
+  <header class="max-w-6xl mx-auto px-4 py-28 flex flex-col md:flex-row items-center justify-between border-b dark:border-gray-700 gap-6">
+    <div class="flex items-center gap-6">
+      <img src="/src/assets/images/profile-imge.jpg" alt="CodeCrafter profile image" class="w-32 h-32 object-cover rounded-full border dark:border-gray-700" />
+      <div>
+        <h1 class="text-3xl font-bold">CodeCrafter</h1>
+        <h2 class="text-xl text-gray-600 dark:text-gray-400">Web Designer & Front-End Developer</h2>
+      </div>
+    </div>
+    <div class="text-sm space-y-1 text-gray-700 dark:text-gray-300">
+      <p><a href="mailto:akshuvo164@gmail.com" class="hover:underline">📧 CodeCrafter</a></p>
+      <p><a href="https://study.com" class="hover:underline" target="_blank">🌐 studywithcodecrafter</a></p>
+      <p><a href="tel:+8801762429433" class="hover:underline">📞 +880 1234567890</a></p>
+    </div>
+  </header>
+
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+      <!-- Personal Info -->
+      <section>
+        <h3 class="text-xl font-semibold mb-2 border-l-4 pl-3 border-blue-500">Personal Information</h3>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deserunt tempora! At consequuntur ducimus aliquid et vero nobis non esse...</p>
+      </section>
+
+      <!-- Work Experience -->
+      <section>
+        <h3 class="text-xl font-semibold mb-2 border-l-4 pl-3 border-blue-500">Work Experience</h3>
+        <div>
+          <h4 class="font-bold">Lecturer of ICT</h4>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minima nobis assumenda adipisci ea saepe aliquid libero accusamus...</p>
+        </div>
+      </section>
+
+      <!-- Key Skills -->
+      <section>
+        <h3 class="text-xl font-semibold mb-2 border-l-4 pl-3 border-blue-500">Key Skills</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold mb-2">Common Skills</h4>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Excellent Managerial skills</li>
+              <li>Outstanding communication skills</li>
+              <li>Fluently speaking in English</li>
+              <li>Leadership</li>
+              <li>Team Management</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Job-related Skills</h4>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Android development</li>
+              <li>Languages: C, C++, Java, Python, HTML, CSS, JavaScript</li>
+              <li>Computer Networking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h3 class="text-xl font-semibold mb-2 border-l-4 pl-3 border-blue-500">Education</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h4 class="font-bold">B.Sc in CSE</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">2024-2027 | CGPA: 3.91 / 4</p>
+            <p>Bangladesh University</p>
+            <p> Dhaka, Bangladesh</p>
+            <p><a href="https://www.lus.ac.bd" class="text-blue-500 hover:underline">www.lus.ac.bd</a></p>
+          </div>
+          <div>
+            <h4 class="font-bold">M.Sc in Software Development</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">2027 Running | CGPA: 3.91 / 5</p>
+            <p>Bangladesh University</p>
+            <p>Mirpur, Dhaka, Bangladesh</p>
+            <p><a href="https://www.tani.fi/fi" class="text-blue-500 hover:underline">www.tani.fi</a></p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-gray-200 dark:bg-gray-800 text-center text-sm text-gray-600 dark:text-gray-400 py-6 mt-12">
+        <div class="flex justify-center gap-6 mb-4">
+          <a href="#" class="hover:text-blue-500 transition">Facebook</a>
+          <a href="#" class="hover:text-red-500 transition">YouTube</a>
+          <a href="#" class="hover:text-green-600 transition">Website</a>
+        </div>
+        
+        <p id="live-time" class="mb-2 text-xs text-gray-500 dark:text-gray-400"></p>
+      
+        <p>&copy; <span id="current-year"></span> CodeCrafter. All rights reserved.</p>
+      </footer>
+      <script>
+        // Live Time and Year
+function updateFooterTime() {
+    const now = new Date();
+    const options = {
+      weekday: 'short', year: 'numeric', month: 'short',
+      day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+    };
+    document.getElementById('live-time').textContent = now.toLocaleString('en-US', options);
+    document.getElementById('current-year').textContent = now.getFullYear();
+  }
+  
+  // Initial call
+  updateFooterTime();
+  
+  // Update every second
+  setInterval(updateFooterTime, 1000);
+      </script>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
+
