@@ -1,0 +1,16 @@
+{
+  "name": "cv-template",
+  "version": "1.0.0",
+  "description": "Responsive CV template with Tailwind CSS v3.4.17",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": ["cv", "resume", "tailwindcss", "template"],
+  "author": "AK Shuvo",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
